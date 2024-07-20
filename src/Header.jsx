@@ -3,7 +3,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header className="header">
-            <div className="companyName">Namik Tupoy</div>
+            <div className="companyName">NAMIK MARKET</div>
             <nav>
                 <Link className="link" to='/'>Home</Link>
                 <Link className="link" to=''>Catalog</Link>

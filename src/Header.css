@@ -8,6 +8,7 @@
     background-color: #343a40;
     color: white;
     padding: 10px 30px;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
