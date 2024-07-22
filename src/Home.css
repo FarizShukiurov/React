@@ -1,13 +1,12 @@
 .app {
     text-align: center;
     padding: 20px;
-  }
+}
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: White;
-  text-shadow: 4px 4px 4px #025cbd;
-  -webkit-text-stroke: 0.8px #025cbd;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: White;
+    text-shadow: 4px 4px 4px gray;
 }
 .slider-image{
     width: 100%;
@@ -16,7 +15,7 @@ h1 {
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     overflow: hidden;
 }
 img{

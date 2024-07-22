@@ -1,7 +1,9 @@
 import Header from './Header'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
+import Footer from './Footer'
 import Home from './Home'
+import NewsPage from './NewsPage'
 function App() {
 
   const products = [
@@ -73,8 +75,10 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element ={<Home products={products}></Home>}></Route>
+          <Route path='/news' element ={<NewsPage></NewsPage>}></Route>
         </Routes>
       </main>
+        <Footer></Footer>
     </div>
   )
 }
