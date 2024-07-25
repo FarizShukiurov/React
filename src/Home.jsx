@@ -14,7 +14,7 @@ const Header = ({products}) => {
     return (
         <div>
             <div className="banner">
-                <img src="https://storage-asset.msi.com/global/picture/banner/banner_1703742076fce41d5debc4e2837799e29ae36447eb.jpeg" alt=""/>
+                <img src="https://www.techweekmag.com/wp-content/uploads/2022/07/How-to-Build-a-1000-Gaming-PC-1.jpg" alt=""/>
                 <div className="banner-content">
                     <h1>Welcome to NAMIK-MARKET</h1>
                     <div className="banner-buttons">

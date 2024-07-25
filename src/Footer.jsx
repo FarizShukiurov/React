@@ -7,7 +7,7 @@ const Footer = () => {
           <p>&copy; 2024 My Company. All rights reserved.</p>
           <nav>
             <ul className="footer-nav">
-              <Link className="link" to='' >About</Link>
+              <Link className="link" to='/about' >About</Link>
               <li><a href="">Contact</a></li>
               <li><a href="">Privacy Policy</a></li>
             </ul>

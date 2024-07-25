@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Footer from './Footer'
 import Home from './Home'
 import NewsPage from './NewsPage'
+import AboutUs from './AboutUs'
 function App() {
 
   const products = [
@@ -11,25 +12,25 @@ function App() {
       id: 1,
       name: 'Компьютерная мышь',
       price: 1500,
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq6qcWYjE1ZKh2mA1yk241YtY-XgsgzlM8-w&s'
+      image: 'https://storage-asset.msi.com/global/picture/image/feature/multimeda/mouse/GM41/GM41-HOLD-FIRMLY-IN-BATTLE.png'
     },
     {
       id: 2,
       name: 'Клавиатура',
       price: 2000,
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkMfoBAq9jYnAQvaZN_xBe0LurbKi_4PKEtQ&s'
+      image: 'https://storage-asset.msi.com/global/picture/image/feature/Gaming-Gear/keyboards/Gk50-Elite-TKL-white/msi-gk50-elite-kv-pc.jpg'
     },
     {
       id: 3,
       name: 'Монитор',
       price: 12000,
-      image: 'https://cdn.thewirecutter.com/wp-content/media/2021/05/27-inch-monitor-2048px-1572.jpg'
+      image: 'https://storage-asset.msi.com/global/picture/image/feature/monitor/MEG-342C-QD-OLED/kv-pd.png'
     },
     {
       id: 4,
       name: 'Ноутбук',
       price: 50000,
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2mSe1YiLgV29zB1_81fhGxZd8Trh52zU3Rg&s'
+      image: 'https://storage-asset.msi.com/global/picture/image/feature/Gaming-Gear/keyboards/Gk50-Elite-TKL-white/msi-gk50-elite-kv-pc.jpg'
     },
     {
       id: 5,
@@ -76,6 +77,7 @@ function App() {
         <Routes>
           <Route path='/' element ={<Home products={products}></Home>}></Route>
           <Route path='/news' element ={<NewsPage></NewsPage>}></Route>
+          <Route path='/about' element ={<AboutUs></AboutUs>}></Route>
         </Routes>
       </main>
         <Footer></Footer>
