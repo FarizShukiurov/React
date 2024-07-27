@@ -9,7 +9,9 @@ const Header = ({products}) => {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 1500,
       };
     return (
         <div>
@@ -23,7 +25,11 @@ const Header = ({products}) => {
                     </div>
                 </div>
             </div>
-            <Slider {...settings}>
+            <div className="products">
+                <h1>Откройте для себя последние инновации</h1>
+                <p><p>Наши товары представляют передовые технологии и современный дизайн, которые удовлетворят любые потребности. Мы предлагаем продукцию, созданную с учетом новейших тенденций и стандартов качества, чтобы обеспечить вам лучшее.</p></p>
+            </div>
+            <Slider className="slider" {...settings}>
                 {products.map(product => (
                     <div key={product.id}>
                         <img className="slider-image" src={product.image} alt="" />

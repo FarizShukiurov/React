@@ -4,69 +4,69 @@ import { Routes, Route } from 'react-router-dom'
 import Footer from './Footer'
 import Home from './Home'
 import NewsPage from './NewsPage'
-import AboutUs from './AboutUs'
+import AboutUsSlider from './AboutUsSlider'
 function App() {
 
   const products = [
     {
       id: 1,
-      name: 'Компьютерная мышь',
+      name: 'CLUTCH GM11 WHITE',
       price: 1500,
-      image: 'https://storage-asset.msi.com/global/picture/image/feature/multimeda/mouse/GM41/GM41-HOLD-FIRMLY-IN-BATTLE.png'
+      image: 'https://asset.msi.com/resize/image/global/product/product_16348857744fdf2727d44fc5b151c235180de77300.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 2,
-      name: 'Клавиатура',
+      name: 'VIGOR GK30 INFRARED',
       price: 2000,
-      image: 'https://storage-asset.msi.com/global/picture/image/feature/Gaming-Gear/keyboards/Gk50-Elite-TKL-white/msi-gk50-elite-kv-pc.jpg'
+      image: 'https://asset.msi.com/resize/image/global/product/product_171557826193d96168e99dcff56a239724a92d8abc.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 3,
-      name: 'Монитор',
+      name: 'MPG 341CQPX QD-OLED',
       price: 12000,
-      image: 'https://storage-asset.msi.com/global/picture/image/feature/monitor/MEG-342C-QD-OLED/kv-pd.png'
+      image: 'https://asset.msi.com/resize/image/global/product/product_1720164891142aeac97ecad037a2d5b39031f76556.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 4,
-      name: 'Ноутбук',
+      name: 'TITAN GT77 HX 13V',
       price: 50000,
-      image: 'https://storage-asset.msi.com/global/picture/image/feature/Gaming-Gear/keyboards/Gk50-Elite-TKL-white/msi-gk50-elite-kv-pc.jpg'
+      image: 'https://asset.msi.com/resize/image/global/product/product_16680748471283fe0d09aff81b8ea184a179a08ba1.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 5,
-      name: 'Внешний жесткий диск',
+      name: 'GeForce RTX™ 4080 SUPER 16G SUPRIM X',
       price: 3000,
-      image: 'https://www.store.pcimage.com.my/image/shoppcimage/image/data/Category/ext-hdd.png'
+      image: 'https://asset.msi.com/resize/image/global/product/product_1704703437c0d7e4a9c6fcc6352c1a46ca5192db79.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 6,
-      name: 'USB флешка',
+      name: 'RadiX AX6600 WiFi 6 Tri-Band Gaming Router',
       price: 800,
-      image: 'https://m.media-amazon.com/images/I/61TgILXQH1L._AC_SL1500_.jpg'
+      image: 'https://asset.msi.com/resize/image/global/product/product_1675148205d078b3fde25021d9357d3ec893970d57.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 7,
-      name: 'Наушники',
+      name: 'IMMERSE GH61',
       price: 2500,
-      image: 'https://m.media-amazon.com/images/I/71pGjUwrUlL._AC_UF1000,1000_QL80_.jpg'
+      image: 'https://asset.msi.com/resize/image/global/product/product_0_20200925101736_5f6d53407b9a7.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 8,
-      name: 'Веб-камера',
+      name: 'MEG Aegis Ti5 13th',
       price: 3500,
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnE5nMSX5ZTrrK0I-HVnu4MyFmC1JnzM_hLQ&s'
+      image: 'https://asset.msi.com/resize/image/global/product/product_16763382067718ee4143d29ee665aa678fa9acc1f1.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 9,
-      name: 'Принтер',
+      name: 'MEG Z790 GODLIKE MAX',
       price: 7000,
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIEypjdrPH1kFnZifBlnAjiGL8MojzNiSZrA&s'
+      image: 'https://asset.msi.com/resize/image/global/product/product_1695177568f52d7dd3586a5af6365171c3fa6a3d01.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     },
     {
       id: 10,
-      name: 'Смарт-часы',
+      name: 'Claw - A1M',
       price: 10000,
-      image: 'https://strgimgr.umico.az/sized/840/444085-2d58832407c78ab057514b950881cfd6.jpg'
+      image: 'https://asset.msi.com/resize/image/global/product/product_1704705807d94cc9a8aa676f72c81e0978bde2fb84.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
     }
   ];
 
@@ -77,7 +77,7 @@ function App() {
         <Routes>
           <Route path='/' element ={<Home products={products}></Home>}></Route>
           <Route path='/news' element ={<NewsPage></NewsPage>}></Route>
-          <Route path='/about' element ={<AboutUs></AboutUs>}></Route>
+          <Route path='/about' element ={<AboutUsSlider></AboutUsSlider>}></Route>
         </Routes>
       </main>
         <Footer></Footer>
