@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import './Home.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 const Header = ({products}) => {
     var settings = {
         dots: false,
@@ -20,8 +21,8 @@ const Header = ({products}) => {
                 <div className="banner-content">
                     <h1>Welcome to NAMIK-MARKET</h1>
                     <div className="banner-buttons">
-                        <button className="white-but">Login</button>
-                        <button className="gray-but">Reg</button>
+                        <Link to= '/about'><button className="white-but">About Us</button></Link>
+                        <Link to= '/news'><button className="gray-but">News</button></Link>
                     </div>
                 </div>
             </div>
